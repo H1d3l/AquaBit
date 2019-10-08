@@ -1,0 +1,10 @@
+{% extends "base_usuario.html" %}
+{% block body %}
+    <form action="{% url 'registrar' %}" method="post">
+        {% csrf_token %}
+        <h2>Crie seu usuario</h2>
+            {{ form }}
+            <button type="submit" class="save btn btn-default">Save</button>
+
+    </form>
+{% endblock %}
