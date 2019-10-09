@@ -20,8 +20,10 @@ def index(request):
 class LoginUsuarioAquabitView(View):
     template_name = 'login_usuario_aquabit.html'
 
+
     def get(self,request):
         form = LoginUsuarioForm()
+
         return render(request,self.template_name,{'form':form})
 
     def post(self,request):
@@ -33,10 +35,28 @@ class LoginUsuarioAquabitView(View):
 
 
             if r.status_code == 200:
-                #Aqui vai ter que redirecionar para outro lugar ou criar um novo usuario
-                user = authenticate( username=dados_form['cpf_cnpj'], password=dados_form['senha'])
-                login(request, user,backend='django.contrib.auth.backends.ModelBackend')
-                return redirect('index')
+                data = requests.get("http://teste.aquabit.com.br/api/v1/usuarios/?page=2").json()
+                data_ajustada = data.get('results')
+
+                for i in data_ajustada:
+                    if dados_form["cpf_cnpj"] == i["inscricao_federal"]:
+                       for k in i['propriedades']:
+                            user = User.objects.create_user(username=i['nome'],
+                                                            email=i['email'],
+                                                            password=dados_form['senha'])
+
+                            usuario = Usuario(nome=i['nome'],
+                                              telefone=i['telefone'],
+                                              cpf_cnpj=i['inscricao_federal'],
+                                              cidade=k['cidade'],
+                                              estado=k['estado'],
+                                              tipo_usuario=i['tipo_de_usuario']['nome'],
+                                              uso_aquabit=True,
+                                              user=user)
+                            usuario.save()
+                            return redirect('index')
+
+
             else:
                 return render(request,'erros.html',{'msg':'Acesso negado'})
 
@@ -50,25 +70,28 @@ class ResgistrarUsuarioView(View):
 
     def post(self,request):
         form = RegistrarUsuarioForm(request.POST)
-        data = requests.get("http://teste.aquabit.com.br/api/v1/usuarios/").text
+        data = requests.get("http://teste.aquabit.com.br/api/v1/usuarios/").json()
         if form.is_valid():
             dados_form = form.cleaned_data
-            if dados_form["cpf_cnpj"] in data:
-                return render(request,'base_usuario.html',{'msg': 'Erro! Já existe um usuário com o mesmo cnpj'})
-            else:
-                user = User.objects.create_user(username=dados_form['nome'],
-                                           email=dados_form['email'],
-                                           password=dados_form['senha'])
 
-                usuario = Usuario(nome=dados_form['nome'],
-                                  telefone=dados_form['telefone'],
-                                  cpf_cnpj=dados_form['cpf_cnpj'],
-                                  cidade=dados_form['cidade'],
-                                  estado=dados_form['estado'],
-                                  tipo_usuario=dados_form['tipo_usuario'],
-                                  uso_aquabit=dados_form['uso_aquabit'],
-                                  user=user)
-                usuario.save()
-                return redirect('login')
+            for i in data['results']:
+                if dados_form["cpf_cnpj"] == i["inscricao_federal"]:
+                    return render(request,'base_usuario.html',{'msg': 'Desculpe. Você já possui um cadastro no Aquabit.'})
+
+                else:
+                    user = User.objects.create_user(username=dados_form['nome'],
+                                               email=dados_form['email'],
+                                               password=dados_form['senha'])
+
+                    usuario = Usuario(nome=dados_form['nome'],
+                                      telefone=dados_form['telefone'],
+                                      cpf_cnpj=dados_form['cpf_cnpj'],
+                                      cidade=dados_form['cidade'],
+                                      estado=dados_form['estado'],
+                                      tipo_usuario=dados_form['tipo_usuario'],
+                                      uso_aquabit=False,
+                                      user=user)
+                    usuario.save()
+                    return redirect('login')
         return render(request,self.template_name,{'form':form})
 

@@ -14,7 +14,6 @@ class RegistrarUsuarioForm(forms.Form):
     cidade = forms.CharField(required=True)
     estado = forms.CharField(required=True)
     tipo_usuario = forms.ChoiceField(choices=TIPO_USUARIO)
-    uso_aquabit = forms.BooleanField(required=False)
 
 
 class LoginUsuarioForm(forms.Form):
