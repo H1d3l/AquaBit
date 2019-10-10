@@ -2,8 +2,17 @@ from django.shortcuts import render,redirect
 from django.views.generic.base import View
 from usuarios.forms import *
 from django.contrib.auth.models import User
-import requests,json
+from usuarios.models import Usuario
+import requests
+from django.contrib.auth.decorators import login_required
+
+
 # Create your views here.
+@login_required
+def index(request):
+    return render(request,'index.html')
+
+
 
 class ResgistrarUsuarioView(View):
     template_name = 'registrar.html'
@@ -20,7 +29,7 @@ class ResgistrarUsuarioView(View):
             if dados_form["cpf_cnpj"] in data:
                 return render(request,'base_usuario.html',{'msg': 'Erro! Já existe um usuário com o mesmo cnpj'})
             else:
-                user = User.objects.create(username=dados_form['nome'],
+                user = User.objects.create_user(username=dados_form['nome'],
                                            email=dados_form['email'],
                                            password=dados_form['senha'])
 
@@ -33,6 +42,6 @@ class ResgistrarUsuarioView(View):
                                   uso_aquabit=dados_form['uso_aquabit'],
                                   user=user)
                 usuario.save()
-                return redirect('registrar')
+                return redirect('login')
         return render(request,self.template_name,{'form':form})
 

@@ -17,5 +17,10 @@ class RegistrarUsuarioForm(forms.Form):
     uso_aquabit = forms.BooleanField(required=False)
 
 
+class LoginUsuarioForm(forms.Form):
+    cpf_cnpj = forms.CharField(required=True)
+    senha = forms.CharField(required=True)
+
+
 
 
