@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 from usuarios.models import Usuario
 import requests,json
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate, login
 
 
 # Create your views here.
@@ -14,7 +13,7 @@ def index(request):
     if request.user.is_authenticated:
         return render(request,'index.html')
     else:
-        return render(request, 'erros.html', {'msg': 'Acesso negado'})
+        return redirect('login')
 
 
 class LoginUsuarioAquabitView(View):
@@ -64,6 +63,7 @@ class LoginUsuarioAquabitView(View):
 class ResgistrarUsuarioView(View):
     template_name = 'registrar.html'
 
+
     def get(self,request):
         form = RegistrarUsuarioForm()
         return render(request,self.template_name,{'form':form})
@@ -74,6 +74,7 @@ class ResgistrarUsuarioView(View):
         if form.is_valid():
             dados_form = form.cleaned_data
 
+            #Verifica se o usuario esta cadastrada na api
             for i in data['results']:
                 if dados_form["cpf_cnpj"] == i["inscricao_federal"]:
                     return render(request,'base_usuario.html',{'msg': 'Desculpe. Você já possui um cadastro no Aquabit.'})
