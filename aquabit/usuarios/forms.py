@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from usuarios.models import *
-from django.forms.utils import ErrorDict, ErrorList, pretty_name
+from django.forms.utils import ErrorDict, ErrorList
 
 class RegistrarUsuarioForm(forms.Form):
     TIPO_USUARIO = [
