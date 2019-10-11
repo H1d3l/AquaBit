@@ -6,5 +6,10 @@
             {{ form }}
             <button type="submit" class="save btn btn-default">Save</button>
 
+
+        {% if form.errors %}
+            {{ msg }}
+        {% endif %}
+
     </form>
 {% endblock %}

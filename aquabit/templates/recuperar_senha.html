@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Por favor digite o cpf para recuperar a senha</h1>
+    <form class="form-signin" role="form"
+          action="{% url 'resetsenha' %}" method="post">
+        {% csrf_token %}
+            {{ form }}
+            <button type="submit" class="save btn btn-default">Enviar</button>
+
+
+
+    </form>
+
+</body>
+</html>
