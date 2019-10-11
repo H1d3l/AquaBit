@@ -8,9 +8,12 @@
 <body>
     <div class="container">
         {% block body %}
-        
+            {{ msg }}
+            <a href="{% url 'resetsenha' %}">Recuperar senha</a>
+
         {% endblock %}
     </div>
-    {{ msg }}
+
+
 </body>
 </html>

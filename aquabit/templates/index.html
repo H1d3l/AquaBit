@@ -5,7 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Bem vindo</h1>
+{% if request.user.is_authenticated %}
+
+    <h1>Bem vindo</h1>
+
+{% endif %}
 
 </body>
 </html>

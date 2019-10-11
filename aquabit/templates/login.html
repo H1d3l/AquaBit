@@ -17,15 +17,13 @@
 
         {% if form.errors %}
             <div class="alert alert-danger">
-                <button type="button" class="close"
-
-                        data-dismiss="alert" aria-hidden="true">×
-                </button>
 
                 Por favor, verifique o Nome e/ou Senha informados
             </div>
         {% endif %}
         <a href="{% url 'registrar' %}">registre-se</a><br>
-        <a href="{% url 'login_aquabit' %}">Login como usuario aquabit</a>
+        <a href="{% url 'login_aquabit' %}">Login como usuario aquabit</a><br>
+        <a href="{% url 'resetsenha' %}">Resetar senha</a>
+
     </form>
 {% endblock %}

@@ -26,5 +26,6 @@ urlpatterns = [
     path('login/',v.LoginView.as_view(template_name='login.html'),name='login'),
     path('login_user_aquabit/',LoginUsuarioAquabitView.as_view(template_name='login_usuario_aquabit.html'),
          name='login_aquabit'),
-    path('logout/',v.LogoutView.as_view(template_name='logout.html'))
+    path('logout/',v.LogoutView.as_view(template_name='logout.html')),
+    path('resetsenha/', RecuperarSenhaView.as_view(), name='resetsenha'),
 ]

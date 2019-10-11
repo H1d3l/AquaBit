@@ -24,7 +24,8 @@ class RegistrarUsuarioForm(forms.Form):
 
         errors.append(message)
 
-    #Verifica se o usuario esta cadastrado no BD
+    #Verifica se o usuario esta cadastrado no BD e valida os dados
+
     def is_valid(self):
         valid = True
         if not super(RegistrarUsuarioForm, self).is_valid():
@@ -41,11 +42,11 @@ class RegistrarUsuarioForm(forms.Form):
         return valid
 
 
-
 class LoginUsuarioForm(forms.Form):
     cpf_cnpj = forms.CharField(required=True)
     senha = forms.CharField(required=True)
 
 
-
+class RecuperarSenhaForm(forms.Form):
+    cpf_cnpj = forms.CharField(required=True)
 
