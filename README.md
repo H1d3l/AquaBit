@@ -9,10 +9,10 @@ Projeto com o objetivo de criar uma plataforma de login e cadastro de clientes d
 # Modelagem
 
 - Diagrama de Classes
-![Modelagem Design de Classes](/documentacao/Class Diagram0.png)
+![Modelagem Design de Classes](/documentacao/Class%20Diagram0.png)
 
 - Diagrama de Caso de Uso
-![](/documentação/UseCase Diagram0.png)
+![Modelagem Design de Caso de Uso](/documentação/UseCase%20Diagram0.png)
 
 
 
