@@ -3,7 +3,7 @@
 Projeto com o objetivo de criar uma plataforma de login e cadastro de clientes do aquabit. 
 
 ## Como o projeto está estruturado?
-- **Documentação :** Contém a modelagem das classes. Possui o arquivo de requisitos do projeto e a modelagem do diagrama de classe e caso de uso.
+- **documentacao :** Contém a modelagem das classes. Possui o arquivo de requisitos do projeto e a modelagem do diagrama de classe e caso de uso.
 - **usuarios:** Contém os arquivos necessários para a execução da aplicação. A pasta “usuarios” refere-se a uma determinada parte da aplicação do software. A organização dos arquivos possui a estrutura do framework Django.
 
 # Modelagem
