@@ -1,0 +1,20 @@
+# FUNÇÕES:
+- Cadastro de Usuário
+- Login (Terá duas opções, fazer um novo cadastro ou acessar com usuário do Aquabit). Se for acessar com usuário do Aquabit, irá verificar a existência do cadastro na API e validar usuário e senha. Caso ele tente fazer um novo cadastro e informe um CPF/CNPJ já existente no Aquabit, iremos retornar informando que já existe um cadastro no Aquabit e se ele não souber da senha, ele poderá recuperar. A nova senha irá para o e-mail test******@gmail.com.
+- Recuperação de Senha (Com envio de e-mail com nova senha gerada aleatoriamente)
+
+# CADASTRO DE USUÁRIO
+- Nome
+- CPF/CNPJ, 
+- e-mail, 
+- Telefone,
+- Tipo: (Estudante,Técnico, Produtor)
+- Estado
+- Cidade
+- Uso Aquabit
+
+# INTEGRAÇÃO API
+- Verificar se o novo usuário ou com acesso "Uso Aquabit" existe na API. Se existir irá verificar usuário e senha e permitir o acesso. Caso não encontre, irá retornar informando que não foi encontrado o CPF/CNPJ na Base do Aquabit e dar a opção dele fazer um novo cadastro.
+
+# CONFIGURAR ADMIN
+- No admin iremos consultar os usuário cadastrados
