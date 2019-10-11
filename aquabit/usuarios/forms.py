@@ -32,10 +32,9 @@ class RegistrarUsuarioForm(forms.Form):
             self.adiciona_erro('Por favor, verifique os dados informados')
             valid = False
 
-        user_exists = User.objects.filter(username=self.cleaned_data['nome']).exists()
         cpf_cnpj_exists = Usuario.objects.filter(cpf_cnpj=self.cleaned_data['cpf_cnpj']).exists()
 
-        if user_exists and cpf_cnpj_exists:
+        if cpf_cnpj_exists:
             self.adiciona_erro('Já existe um cadastro no Aquabit')
             valid = False
 

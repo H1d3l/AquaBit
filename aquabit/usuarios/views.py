@@ -160,16 +160,20 @@ class RecuperarSenhaView(View):
         form = RecuperarSenhaForm(request.POST)
         if form.is_valid():
             dados_form = form.cleaned_data
-            cpf_cnpj_usuario = Usuario.objects.get(cpf_cnpj=dados_form['cpf_cnpj'])
-            email = cpf_cnpj_usuario.user.email
-            usuario = cpf_cnpj_usuario.user
-            user = User.objects.get(username=usuario)
-            gera_senha = BaseUserManager().make_random_password()
-            user.set_password(gera_senha)
-            user.save()
-            send_email = EmailMessage('Reset senha','A sua nova senha é %s'% gera_senha, to=[email])
-            send_email.send()
-            enviado = cpf_cnpj_usuario.ocultaemail(email)
+            check_usuario = Usuario.objects.filter(cpf_cnpj=dados_form['cpf_cnpj']).exists()
+            if check_usuario:
+                cpf_cnpj_usuario = Usuario.objects.get()
+                email = cpf_cnpj_usuario.user.email
+                usuario = cpf_cnpj_usuario.user
+                user = User.objects.get(username=usuario)
+                gera_senha = BaseUserManager().make_random_password()
+                user.set_password(gera_senha)
+                user.save()
+                send_email = EmailMessage('Reset senha','A sua nova senha é %s'% gera_senha, to=[email])
+                send_email.send()
+                enviado = cpf_cnpj_usuario.ocultaemail(email)
 
-            return HttpResponse("A nova senha foi enviada para o email %s" % enviado )
+                return HttpResponse("A nova senha foi enviada para o email %s" % enviado )
+            else:
+                return HttpResponse("Este cpf/cnpj não está cadastrado no sistema. Por favor tente outro cpf/cnpj.")
 

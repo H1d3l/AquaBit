@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Login Usuario Aquabit</h1>
 <form class="form-signin" role="form"
           action="{% url 'login_aquabit' %}" method="post">
         {% csrf_token %}
@@ -12,6 +13,9 @@
         <button class="btn btn-lg btn-primary btn-block"
                 type="submit" value="Login">Login
         </button>
+
+    <a href="{% url 'resetsenha' %}">Esqueceu a senha?</a>
+
 </form>
 
 </body>

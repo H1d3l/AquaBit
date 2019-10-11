@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9241b961-0e73-4d78-8900-3d3bbdf2431a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aquabit/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/aquabit/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aquabit/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/aquabit/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registrar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registrar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login_usuario_aquabit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login_usuario_aquabit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recuperar_senha.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recuperar_senha.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usuarios/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usuarios/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,26 +51,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/usuarios/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state relative-caret-position="356">
+              <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
-                <element signature="e#196#1492#0" />
                 <element signature="e#211#308#0" />
-                <element signature="e#972#1492#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login_usuario_aquabit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usuarios/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="204">
+              <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -85,40 +88,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usuarios/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="173" column="44" lean-forward="true" selection-start-line="173" selection-start-column="44" selection-end-line="173" selection-end-column="44" />
+            <state relative-caret-position="103">
+              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#560#4986#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aquabit/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="132" column="16" lean-forward="true" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://e07ab4de-22e0-47ff-b4d0-5f600c7b33d2/schema/main/table/usuarios_usuario">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="33b7a943-da8a-43cc-bb0e-7c1bd7d592a3">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base_usuario.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -135,28 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/recuperar_senha.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="27" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/registrar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="55" selection-start-line="6" selection-end-line="7" />
+            <state relative-caret-position="170">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -180,18 +137,18 @@
         <option value="$PROJECT_DIR$/templates/erro_usuario_cadastrado.html" />
         <option value="$PROJECT_DIR$/templates/logout.html" />
         <option value="$PROJECT_DIR$/templates/erros.html" />
-        <option value="$PROJECT_DIR$/templates/login_usuario_aquabit.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/base_usuario.html" />
         <option value="$PROJECT_DIR$/aquabit/urls.py" />
         <option value="$PROJECT_DIR$/templates/registrar.html" />
-        <option value="$PROJECT_DIR$/usuarios/forms.py" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/recuperar_senha.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/aquabit/settings.py" />
         <option value="$PROJECT_DIR$/usuarios/views.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/login_usuario_aquabit.html" />
         <option value="$PROJECT_DIR$/usuarios/models.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/templates/recuperar_senha.html" />
+        <option value="$PROJECT_DIR$/usuarios/forms.py" />
       </list>
     </option>
   </component>
@@ -310,15 +267,16 @@
       <workItem from="1570663622089" duration="1280000" />
       <workItem from="1570705183138" duration="4524000" />
       <workItem from="1570753267304" duration="11508000" />
-      <workItem from="1570792055661" duration="8637000" />
+      <workItem from="1570792055661" duration="11402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84060000" />
+    <option name="totallyTimeSpent" value="86825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18003026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -334,14 +292,14 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3494364" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.048309177" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.28441754" />
+      <window_info anchor="right" id="Database" order="4" weight="0.14977308" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17549168" />
@@ -421,13 +379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login_usuario_aquabit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base_usuario.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -435,40 +386,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/recuperar_senha.html">
+    <entry file="file://$PROJECT_DIR$/aquabit/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="186">
+          <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.SCHEMA:main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.SCHEMA:main</OriginalElement>
+          <nodes>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.auth_group</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.django_migrations</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.django_admin_log</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.sqlite_master</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.auth_user</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.django_session</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.sqlite_sequence</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.django_content_type</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.usuarios_usuario</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.auth_user_user_permissions</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.auth_permission</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.auth_group_permissions</node>
+            <node x="" y="">e07ab4de-22e0-47ff-b4d0-5f600c7b33d2.TABLE:main.auth_user_groups</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6913525498891352" x="471.0" y="423.29666452854394" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuarios/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="27" selection-end-column="11" />
+        <state relative-caret-position="102">
+          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login_usuario_aquabit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/registrar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="55" selection-start-line="6" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aquabit/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="132" column="16" lean-forward="true" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e07ab4de-22e0-47ff-b4d0-5f600c7b33d2/schema/main/table/usuarios_usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="33b7a943-da8a-43cc-bb0e-7c1bd7d592a3">
-          <filtering>
-            <filter text="" />
-          </filtering>
+        <state relative-caret-position="170">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -481,35 +464,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usuarios/forms.py">
+    <entry file="das://e07ab4de-22e0-47ff-b4d0-5f600c7b33d2/schema/main/table/usuarios_usuario">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="33b7a943-da8a-43cc-bb0e-7c1bd7d592a3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/recuperar_senha.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <element signature="e#196#1492#0" />
-            <element signature="e#211#308#0" />
-            <element signature="e#972#1492#0" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/usuarios/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="173" column="44" lean-forward="true" selection-start-line="173" selection-start-column="44" selection-end-line="173" selection-end-column="44" />
+        <state relative-caret-position="103">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#560#4986#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usuarios/models.py">
+    <entry file="file://$PROJECT_DIR$/usuarios/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="356">
+          <caret line="41" column="20" lean-forward="true" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#211#308#0" />
           </folding>
         </state>
       </provider>
