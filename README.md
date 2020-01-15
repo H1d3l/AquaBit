@@ -1,5 +1,5 @@
 
-# TesteAquabit
+# Aquabit
 Projeto com o objetivo de criar uma plataforma de login e cadastro de clientes do aquabit. 
 
 ## Como o projeto está estruturado?
